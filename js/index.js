@@ -44,69 +44,85 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 const middleImg = document.getElementById('middle-img'); 
-middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"] )
+  middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"] )
 
 const headerImg = document.getElementById('cta-img');
-headerImg.setAttribute('src', siteContent['cta']['img-src'])
+  headerImg.setAttribute('src', siteContent['cta']['img-src'])
 
 
 const navArr = document.getElementsByTagName('a')
-navArr[0].textContent = siteContent['nav']['nav-item-1']
-navArr[1].textContent = siteContent['nav']['nav-item-2']
-navArr[2].textContent = siteContent['nav']['nav-item-3']
-navArr[3].textContent = siteContent['nav']['nav-item-4']
-navArr[4].textContent = siteContent['nav']['nav-item-5']
-navArr[5].textContent = siteContent['nav']['nav-item-6']
+  navArr[0].textContent = siteContent['nav']['nav-item-1']
+  navArr[1].textContent = siteContent['nav']['nav-item-2']
+  navArr[2].textContent = siteContent['nav']['nav-item-3']
+  navArr[3].textContent = siteContent['nav']['nav-item-4']
+  navArr[4].textContent = siteContent['nav']['nav-item-5']
+  navArr[5].textContent = siteContent['nav']['nav-item-6']
 
 
 const hOne = document.getElementsByTagName('h1')
-hOne[0].textContent = siteContent['cta']['h1']
+  hOne[0].textContent = siteContent['cta']['h1']
 
 const btnText = document.getElementsByTagName('button')
-btnText[0].innerText = siteContent['cta']['button']
+  btnText[0].innerText = siteContent['cta']['button']
+const dominate = e => hOne[0].innerText = 'Dom Is DOMINATING';
+ btnText[0].addEventListener("click", dominate);
+
+
 
 const topHead = document.querySelectorAll('.top-content h4')
-topHead[0].textContent = siteContent['main-content']['features-h4']
-topHead[1].textContent = siteContent['main-content']['about-h4']
+  topHead[0].textContent = siteContent['main-content']['features-h4']
+  topHead[1].textContent = siteContent['main-content']['about-h4']
 
 const topPara = document.querySelectorAll('.top-content p')
-topPara[0].textContent = siteContent['main-content']['features-content']
-topPara[1].textContent = siteContent['main-content']['about-content']
+  topPara[0].textContent = siteContent['main-content']['features-content']
+  topPara[1].textContent = siteContent['main-content']['about-content']
+//style changes
+  topPara[0].style.backgroundColor = 'silver'
+  topPara[0].style.color = 'magenta'
+  topPara[1].style.fontSize =  '3rem'
+  topPara[1].style.color = 'yellow'
+
 
 const botHead = document.querySelectorAll('.bottom-content h4')
-botHead[0].textContent = siteContent['main-content']['services-h4']
-botHead[1].textContent = siteContent['main-content']['product-h4']
-botHead[2].textContent = siteContent['main-content']['vision-h4']
+  botHead[0].textContent = siteContent['main-content']['services-h4']
+  botHead[1].textContent = siteContent['main-content']['product-h4']
+  botHead[2].textContent = siteContent['main-content']['vision-h4']
+//style changes
+  botHead[0].style.color = 'red'
+  botHead[0].style.backgroundColor = 'yellow'
+  botHead[1].style.color = 'orange'
+  botHead[1].style.backgroundColor = 'teal'
+  botHead[2].style.fontSize = '5rem'
 
 const botPara = document.querySelectorAll('.bottom-content p')
-botPara[0].textContent = siteContent['main-content']['services-content']
-botPara[1].textContent = siteContent['main-content']['product-content']
-botPara[2].textContent = siteContent['main-content']['vision-content']
+  botPara[0].textContent = siteContent['main-content']['services-content']
+  botPara[1].textContent = siteContent['main-content']['product-content']
+  botPara[2].textContent = siteContent['main-content']['vision-content']
 
 const contactHead = document.querySelectorAll('.contact h4')
-contactHead[0].textContent = siteContent['contact']['contact-h4']
+  contactHead[0].textContent = siteContent['contact']['contact-h4']
 
 const contactPara = document.querySelectorAll('.contact p')
-contactPara[0].textContent = siteContent['contact']['address']
-contactPara[1].textContent = siteContent['contact']['phone']
-contactPara[2].textContent = siteContent['contact']['email']
+  contactPara[0].textContent = siteContent['contact']['address']
+  contactPara[1].textContent = siteContent['contact']['phone']
+  contactPara[2].textContent = siteContent['contact']['email']
 
 
 const footer = document.querySelectorAll('footer p')
-footer[0].textContent = siteContent['footer']['copyright']
+  footer[0].textContent = siteContent['footer']['copyright']
 
 
 const navColor = document.getElementsByTagName('header')
-navColor[0].style.backgroundColor = 'green'
+  navColor[0].style.backgroundColor = 'green'
 
 const newA = document.createElement("a")
-newA.textContent = 'newA'
+  newA.textContent = 'newA'
 const newB = document.createElement("a")
-newB.textContent = 'newB'
+  newB.textContent = 'newB'
 
 const nav = document.getElementsByTagName('nav')
-nav[0].appendChild(newA);
-nav[0].appendChild(newB);
+  nav[0].appendChild(newA);
+  nav[0].appendChild(newB);
 
 
 
